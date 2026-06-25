@@ -74,7 +74,7 @@
 
   <div class="card">
     <h1>Tracker cicilan hutang</h1>
-    <p class="subtitle">No. 001/SPH/IV/2026 · Bernadeta Herlina PW → Yohanes Yobel Yuantomo</p>
+    <p class="subtitle">No. 001/SPH/IV/2026</p>
   </div>
 
   <div class="card">
@@ -435,6 +435,7 @@ async function initSession() {
     document.getElementById('authStatus').className = 'status-msg ok';
     document.getElementById('actionsRow').classList.remove('hidden');
     document.getElementById('closeEditBtn').classList.remove('hidden');
+    render(); // render ulang setelah isUnlocked = true
   }
 }
 
